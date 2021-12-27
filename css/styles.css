@@ -138,7 +138,7 @@ a {
 
 .list--ticked {
   line-height: 4.5rem;
-  list-style-image: url(../icons/tick.svg);
+  list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
 }
 
@@ -151,4 +151,26 @@ a {
   .list--ticked .list__item {
     padding-left: 0;
   }
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary); /* fill is just used for svg files */
+}
+
+/* icon-container is a completely separate class and we use - to separate words in BEM*/
+/* width and height has no effect on inline elements */
+.icon-container {
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f9fa;
+  border-radius: 100%;
 }
